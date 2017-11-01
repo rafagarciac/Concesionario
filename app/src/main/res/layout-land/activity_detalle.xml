@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc_gaming.concesionario.DetalleActivity">
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/coche_mercedes_perfil"
+        android:layout_below="@+id/tvPerfil"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imgFrontal"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginRight="15dp"
+        app:srcCompat="@drawable/coche_mercedes_frontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imgPerfil"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:id="@+id/tvCaballos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CABALLOS:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_above="@+id/tvCarburante"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvMarchas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MARCHAS:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_below="@+id/tvCarburante"
+        android:layout_alignStart="@+id/tvCarburante"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/tvPuertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PUERTAS:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_below="@+id/tvMarchas"
+        android:layout_alignStart="@+id/tvMarchas"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/tvCarburante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARBURANTE:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignBottom="@+id/imgPerfil"
+        android:layout_alignStart="@+id/tvCaballos" />
+
+    <TextView
+        android:id="@+id/tvKms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KILOMETROS:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvAnno"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:id="@+id/tvAnno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AÑO:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_below="@+id/tvKms"
+        android:layout_alignStart="@+id/tvCaballos"
+        android:layout_marginTop="14dp" />
+
+    <ImageButton
+        android:id="@+id/btnIWeb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imgPerfil" />
+
+    <Switch
+        android:id="@+id/swTransferencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRANSFERENCIA: "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_below="@+id/tvPuertas"
+        android:layout_alignStart="@+id/tvPuertas"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/anno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="1998"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvAnno"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/kilometros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="180.000"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvKms"
+        android:layout_alignEnd="@+id/anno" />
+
+    <TextView
+        android:id="@+id/marchas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="6"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvMarchas"
+        android:layout_alignEnd="@+id/kilometros"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:id="@+id/caballos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="320 CV"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvCaballos"
+        android:layout_alignStart="@+id/carburante" />
+
+    <TextView
+        android:id="@+id/carburante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="DIÉSEL"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/tvCarburante"
+        android:layout_alignBottom="@+id/tvCarburante"
+        android:layout_toStartOf="@+id/btnIWeb" />
+
+    <TextView
+        android:id="@+id/puertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="5"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/btnIWeb"
+        android:layout_alignStart="@+id/marchas"
+        android:paddingBottom="23dp"/>
+</RelativeLayout>
