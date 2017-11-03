@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         arrayListCoches = new ArrayList<Coche>();
 
         //CREACION DE OBJETOS
-        arrayListCoches.add(new Coche(1, "BMW", "Z4", "Gasolina", "2001", "Semi-Nuevo", "154.000", 2, "233", 6, R.drawable.coche_z4_lv, R.drawable.coche_z4_perfil, R.drawable.coche_z4_frontal, R.drawable.bmw_logo,  false));
-        arrayListCoches.add(new Coche(2, "MERCEDES", "S-CLASS", "Diésel", "2013", "Nuevo", "0", 5, "200", 6, R.drawable.coche_mercedes_lv, R.drawable.coche_mercedes_perfil, R.drawable.coche_mercedes_frontal, R.drawable.mercedes_logo,  true));
-        arrayListCoches.add(new Coche(3, "VOLKS", "SCIROCCO", "Diésel", "2010", "Semi-Nuevo", "40.000", 5, "175", 5, R.drawable.coche_volkswagen_lv, R.drawable.coche_volkswagen_perfil, R.drawable.coche_volkswagen_frontal, R.drawable.volkswagen_logo,  false));
+        arrayListCoches.add(new Coche(1, "BMW", "Z4", "Gasolina", "2001", "Semi-Nuevo", "154.000", 2, "233", 6, R.mipmap.bmw_lv, R.mipmap.bmw_perfil, R.mipmap.bmw_frontal, R.mipmap.bmw_logo,  false));
+        arrayListCoches.add(new Coche(2, "MERCEDES", "S-CLASS", "Diésel", "2013", "Nuevo", "0", 5, "200", 6, R.mipmap.mercedes_lv, R.mipmap.mercedes_perfil, R.mipmap.mercedes_frontal, R.mipmap.mercedes_logo,  true));
+        arrayListCoches.add(new Coche(3, "VOLKS", "SCIROCCO", "Diésel", "2010", "Semi-Nuevo", "40.000", 5, "175", 5, R.mipmap.volkswagen_lv, R.mipmap.volkswagen_perfil, R.mipmap.volkswagen_frontal, R.mipmap.volkswagen_logo,  false));
 
         //ADAPTADOR
         Adaptador myAdaptor = new Adaptador(getApplicationContext(), arrayListCoches);
