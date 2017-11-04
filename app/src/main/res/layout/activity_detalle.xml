@@ -134,6 +134,7 @@
 
     <ImageButton
         android:id="@+id/btnIWeb"
+        style="@android:style/Widget.ImageButton"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignEnd="@+id/imgFrontal"

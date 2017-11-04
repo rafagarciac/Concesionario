@@ -8,13 +8,14 @@ import java.io.Serializable;
 
 public class Coche implements Serializable{
 
-    private String marca, modelo, carburante, anno, estado, km, cv;
+    private String marca, modelo, carburante, anno, estado, km, cv, url;
     private int id, puertas, marchas, imgLV, imgPerfil, imgFrontal, imgLogo;
     private boolean transferencia;
 
 //CONSTRUCTOR SOBRECARGADO
-    public Coche(int id, String marca, String modelo, String carburante, String anno, String estado, String km, int puertas, String cv, int marchas,
+    public Coche(int id, String marca, String modelo, String carburante, String anno, String estado, String km, int puertas, String cv, int marchas, String url,
                  int imgLV, int imgPerfil, int imgFrontal, int imgLogo, boolean transferencia) {
+
         this.id = id;
         this.marca = marca;
         this.modelo = modelo;
@@ -25,11 +26,13 @@ public class Coche implements Serializable{
         this.puertas = puertas;
         this.cv = cv;
         this.marchas = marchas;
+        this.url = url;
         this.transferencia = transferencia;
         this.imgLV = imgLV;
         this.imgLogo = imgLogo;
         this.imgPerfil = imgPerfil;
         this.imgFrontal = imgFrontal;
+
     }
 
 //METODOS GETTER Y SETTER
@@ -95,6 +98,10 @@ public class Coche implements Serializable{
         this.imgLogo = imgLogo;
     }
 
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     //-------------------------------------------------
 
 
@@ -156,5 +163,9 @@ public class Coche implements Serializable{
 
     public int getImgLogo() {
         return imgLogo;
+    }
+
+    public String getUrl() {
+        return url;
     }
 }

@@ -22,8 +22,7 @@
         android:layout_marginRight="15dp"
         app:srcCompat="@drawable/coche_mercedes_frontal"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imgPerfil"
-        android:layout_marginStart="14dp" />
+        android:layout_alignStart="@+id/imgPerfil" />
 
     <TextView
         android:id="@+id/tvCaballos"
