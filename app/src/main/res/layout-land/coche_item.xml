@@ -2,20 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="100dp"
     android:weightSum="1"
     android:orientation="horizontal">
 
     <ImageView
         android:id="@+id/imgView"
         android:layout_width="76dp"
-        android:layout_height="64dp"
-        android:layout_weight="0.03"
+        android:layout_height="match_parent"
+        android:layout_weight="1.74"
         app:srcCompat="@mipmap/mercedes_lv" />
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="64dp"
+        android:layout_width="491dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:weightSum="1">
 
@@ -34,16 +34,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:weightSum="1">
 
             <TextView
                 android:id="@+id/tvModelo"
                 android:layout_width="135dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginRight="55dp"
-                android:layout_weight="0.21"
+                android:layout_weight="0.22"
                 android:fontFamily="cursive"
                 android:text="MARCA"
                 android:textAlignment="center"
@@ -54,9 +54,9 @@
 
             <ImageView
                 android:id="@+id/imgLogo"
-                android:layout_width="28dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.16"
+                android:layout_width="91dp"
+                android:layout_height="74dp"
+                android:layout_marginLeft="150dp"
                 app:srcCompat="@mipmap/mercedes_logo" />
 
         </LinearLayout>

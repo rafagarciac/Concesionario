@@ -11,7 +11,7 @@
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginLeft="10dp"
-        app:srcCompat="@drawable/coche_mercedes_perfil"
+        app:srcCompat="@mipmap/mercedes_perfil"
         android:layout_alignParentTop="true" />
 
     <ImageView
@@ -19,7 +19,7 @@
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginRight="15dp"
-        app:srcCompat="@drawable/coche_mercedes_frontal"
+        app:srcCompat="@mipmap/mercedes_frontal"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
 
